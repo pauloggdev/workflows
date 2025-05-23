@@ -1,0 +1,26 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "plugins": ["jest"],
+  "overrides": [
+    {
+      "files": ["tests/**/*.js", "**/*.test.js"],
+      "env": {
+        "jest": true
+      },
+      "extends": ["plugin:jest/recommended"]
+    },
+    {
+      "files": ["jest.config.js"],
+      "env": {
+        "node": true
+      },
+      "parserOptions": {
+        "sourceType": "script"
+      }
+    }
+  ],
+  "extends": ["eslint:recommended"]
+}
