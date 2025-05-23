@@ -30,6 +30,11 @@ export default [
         ...globals.jest
       }
     },
+    settings: {
+      jest: {
+        version: "29.7.0"
+      }
+    },
     rules: {
       ...pluginJest.configs.recommended.rules
     }
